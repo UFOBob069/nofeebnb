@@ -332,14 +332,14 @@ const LandingPage = () => {
             {[
               {
                 q: "How does direct booking work?",
-                a: "Once you find a property you like, you'll communicate directly with the host to arrange your stay. No middleman, no extra fees - just straightforward booking between you and the host."
+                a: "Once you find a property you like, you&quot;ll communicate directly with the host to arrange your stay. No middleman, no extra fees - just straightforward booking between you and the host."
               },
-              {
+              
                 q: "Is it safe to book directly with hosts?",
                 a: "All our hosts are verified, and we provide a messaging platform for secure communication. We recommend following our booking guidelines and keeping all communication on-platform."
               },
               {
-                q: "What's the host subscription fee?",
+                q: "What&quot;s the host subscription fee?",
                 a: "Hosts pay a low monthly subscription fee of $9.99 per property. No additional fees or commissions on bookings - you keep 100% of what you earn."
               },
               {
