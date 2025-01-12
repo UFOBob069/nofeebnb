@@ -175,7 +175,7 @@ export default function SignupForm() {
 
       {submitStatus === 'success' && (
         <div className="text-green-600 text-center mt-4">
-          Thanks for signing up! We'll be in touch soon.
+          Thanks for signing up! We&apos;ll be in touch soon.
         </div>
       )}
 
