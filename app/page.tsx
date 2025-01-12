@@ -1,11 +1,9 @@
-'use client'
-import React, { useState } from 'react';
-import { Home, CheckCircle, Users, CreditCard, Shield, MessageCircle, Calendar, MapPin, Star } from 'lucide-react';
+'use client';
+
+import React from 'react';
 import SignupForm from './components/SignupForm';
 
 const LandingPage = () => {
-  const [role, setRole] = React.useState('');
-  
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Header */}
