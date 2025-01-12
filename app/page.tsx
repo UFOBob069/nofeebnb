@@ -11,7 +11,9 @@ export default function LandingPage() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-blue-600">NoFeesBnB</span>
+            <span className="text-2xl font-bold text-blue-600">
+              Pay<span className="text-pink-500">No</span>Fees<span className="text-pink-500">BnB</span>
+            </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#why" className="text-gray-600 hover:text-blue-600">Why Us</a>
@@ -173,7 +175,7 @@ export default function LandingPage() {
               {
                 icon: "💎",
                 title: "Founding Member Badge",
-                description: "Permanent status as an original NoFeesBnB member"
+                description: "Permanent status as an original PayNoFeesBnB member"
               },
               {
                 icon: "🎯",
@@ -242,7 +244,7 @@ export default function LandingPage() {
                 </div>
 
                 <div className="bg-blue-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-4">NoFeesBnB</h3>
+                  <h3 className="text-xl font-semibold mb-4">PayNoFeesBnB</h3>
                   <div className="space-y-2 text-gray-600">
                     <p>$200/night rate</p>
                     <p>+ $0 service fee</p>
@@ -274,7 +276,7 @@ export default function LandingPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Early Access Members Love NoFeesBnB
+            Early Access Members Love PayNoFeesBnB
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -375,7 +377,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">NoFeesBnB</h3>
+              <h3 className="text-lg font-semibold mb-4">PayNoFeesBnB</h3>
               <p className="text-gray-400">
                 The fee-free vacation rental platform connecting hosts and travelers directly.
               </p>
@@ -410,7 +412,7 @@ export default function LandingPage() {
           </div>
           <div className="border-t border-gray-800 pt-8 text-center">
             <p className="text-gray-400">
-              © {new Date().getFullYear()} NoFeesBnB - All rights reserved
+              © {new Date().getFullYear()} PayNoFeesBnB - All rights reserved
             </p>
           </div>
         </div>
