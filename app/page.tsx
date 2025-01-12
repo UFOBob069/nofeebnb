@@ -3,7 +3,7 @@
 import React from 'react';
 import SignupForm from './components/SignupForm';
 
-const LandingPage = () => {
+export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Header */}
@@ -27,12 +27,12 @@ const LandingPage = () => {
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 px-4 text-center">
-        {/* Background image - you'll need to add your image path */}
+        {/* Background image */}
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{
             backgroundImage: 'url("/hero.png")',
-            backgroundColor: 'rgba(0, 0, 0, 0.5)', // Dark overlay
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
             backgroundBlend: 'overlay'
           }}
         ></div>
@@ -107,7 +107,7 @@ const LandingPage = () => {
               {
                 icon: "⭐",
                 title: "Verified Reviews",
-                description: "Authentic reviews from real guests who've stayed at the property"
+                description: "Authentic reviews from real guests who have stayed at the property"
               },
               {
                 icon: "🌟",
@@ -133,15 +133,15 @@ const LandingPage = () => {
 
       {/* Sign Up Form */}
       <section id="signup" className="py-16 px-4 bg-gray-50">
-  <div className="max-w-xl mx-auto">
-    <div className="bg-white rounded-xl shadow-lg p-8">
-      <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">
-        Get Early Access
-      </h2>
-      <SignupForm />
-    </div>
-  </div>
-</section>
+        <div className="max-w-xl mx-auto">
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">
+              Get Early Access
+            </h2>
+            <SignupForm />
+          </div>
+        </div>
+      </section>
 
       {/* Early Access Benefits */}
       <section className="py-16 px-4 bg-blue-50">
@@ -286,7 +286,7 @@ const LandingPage = () => {
                 location: "Miami, FL"
               },
               {
-                quote: "Finally! A platform that doesn't charge ridiculous service fees. I saved over $300 on my last vacation booking.",
+                quote: "Finally! A platform that does not charge ridiculous service fees. I saved over $300 on my last vacation booking.",
                 author: "Michael R.",
                 role: "Frequent Traveler",
                 location: "Boston, MA"
@@ -299,7 +299,7 @@ const LandingPage = () => {
               }
             ].map((testimonial, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
-                <div className="text-2xl text-blue-600 mb-4">"</div>
+                <div className="text-2xl text-blue-600 mb-4">&ldquo;</div>
                 <p className="text-gray-600 mb-6">{testimonial.quote}</p>
                 <div>
                   <p className="font-semibold text-gray-900">{testimonial.author}</p>
@@ -332,14 +332,14 @@ const LandingPage = () => {
             {[
               {
                 q: "How does direct booking work?",
-                a: "Once you find a property you like, you&quot;ll communicate directly with the host to arrange your stay. No middleman, no extra fees - just straightforward booking between you and the host."
+                a: "Once you find a property you like, you will communicate directly with the host to arrange your stay. No middleman, no extra fees - just straightforward booking between you and the host."
               },
-              
+              {
                 q: "Is it safe to book directly with hosts?",
                 a: "All our hosts are verified, and we provide a messaging platform for secure communication. We recommend following our booking guidelines and keeping all communication on-platform."
               },
               {
-                q: "What&quot;s the host subscription fee?",
+                q: "What is the host subscription fee?",
                 a: "Hosts pay a low monthly subscription fee of $9.99 per property. No additional fees or commissions on bookings - you keep 100% of what you earn."
               },
               {
@@ -369,6 +369,8 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
@@ -387,7 +389,7 @@ const LandingPage = () => {
                 <li><a href="#signup" className="text-gray-400 hover:text-white">Get Early Access</a></li>
               </ul>
             </div>
-                          <div>
+            <div>
               <h3 className="text-lg font-semibold mb-4">For Hosts</h3>
               <ul className="space-y-2">
                 <li><a href="#signup" className="text-gray-400 hover:text-white">Start Hosting</a></li>
@@ -415,5 +417,4 @@ const LandingPage = () => {
       </footer>
     </div>
   );
-
-export default LandingPage;
+}
