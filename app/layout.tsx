@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NoFeesBnB - Fee-Free Vacation Rentals",
+  title: "PayNoFeesBnB - Fee-Free Vacation Rentals",
   description: "Direct booking vacation rentals with no service fees or commissions",
 };
 
