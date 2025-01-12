@@ -36,11 +36,9 @@ export default function SignupForm() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
-
+  
     try {
-      console.log('Submitting data:', formData);
-
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxQ74NEwzJO4u9khhXdDc7q5akfgZGGNTa1A3ceanhg4isidbcdmXTMllGJ9zNWU8g/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbxQ74NEwzJO4u9khhXdDc7q5akfgZGGNTa1A3ceanhg4isidbcdmXTMllGJ9zNWU8g/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
@@ -48,7 +46,7 @@ export default function SignupForm() {
         },
         body: JSON.stringify(formData)
       });
-
+  
       setSubmitStatus('success');
       setFormData({
         fullName: '',
