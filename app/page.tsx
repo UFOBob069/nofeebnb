@@ -33,7 +33,7 @@ export default function LandingPage() {
           style={{
             backgroundImage: 'url("/hero.png")',
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            backgroundBlend: 'overlay'
+            backgroundBlendMode: 'overlay'
           }}
         ></div>
         
